@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+ 	 <title>positionAbsolute</title>
+ 	 <link rel="stylesheet" type="text/css" href="animate.css">
+<style type="text/css">
+	body{
+		background: #ccc;
+	}
+	.general_block{
+		display: flex;
+		background: white;
+		width: 50px;
+		margin-top: 30px;
+		margin-left: 300px;
+		padding: 5px;
+		border: 1px solid black;
+
+	}
+	.subBlock{
+		background: blue;
+		color: white;
+		border-radius: 50%;
+		height: 20px;
+		width: 20px;
+		align-content: center;
+		text-align: center;
+		margin-top: -20px;
+		margin-left:  -15px;
+		border: 2px solid white;
+	}
+	.image img{
+		height: 30px;
+		width: 30px;
+		box-sizing: border-box;
+	}
+	hr{
+		border: 2px solid black;
+	}
+.firstblock,.secondblock,.thirdblock{
+	border: 1px solid black;
+	height: 35px;
+	width: 350px;
+	float: left;
+	position: relative;
+}
+.thirdblock:after{
+	clear:both;
+	content: "";
+	display: block;
+}
+.Menu a{
+	display: block;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.Menu li{
+	float: left;
+	list-style-type: none;
+	margin: 0 auto;
+	height: 25px;
+	margin-top: -4%;
+	padding: 0 5px 0 5px;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+{}
+.Menu li ul li  a{
+	position: absolute;
+	left: 0px;
+	display: none;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+	<!--<div  class="rotateIn animated rotateIn">-->
+	<!--<div class="zoomIn">-->
+		<div class="subBlock"><span>1</span></div>
+		<div class="rotateIn animated rotateIn" class="image"><img src="img/icon (1).png"></div>
+		
+	</div>
+	<br>
+	<hr>
+	<br>
+
+	<div class="firstblock"></div>
+	<div class="secondblock">
+		<ul class="Menu">
+			<li><a href="#">SubMenu_1</a>
+			<ua><li><a href="#">dfds</a></li>
+				<li><a href="#">dfds</a></li>
+			</ul>
+			</li>
+			<li><a href="#">SubMenu_1</a></li>
+			<li><a href="#">SubMenu_1</a></li>
+
+		</ul>
+	</div>
+	<div class="thirdblock"></div>
+	<br>
+
+
+
+
+</body>
+</html>

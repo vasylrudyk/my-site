@@ -1,0 +1,26 @@
+.container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 80px;
+}
+.container ul li a{
+	display: block;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.flex-cont{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;}
+.container div:nth-child(1){
+	position: relative;
+	left: 350px;
+}
+.search{
+	display: flex;
+}
+.search input,div{
+	align-items: center;
+}
+
